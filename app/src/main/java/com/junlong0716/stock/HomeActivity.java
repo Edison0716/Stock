@@ -1,5 +1,6 @@
 package com.junlong0716.stock;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.BoolRes;
 import android.support.design.widget.NavigationView;
@@ -130,6 +131,9 @@ public class HomeActivity extends BaseMvcActivity implements NavigationView.OnNa
                     break;
             }
 
+            return true;
+        }else if (id == R.id.action_location){
+            startActivity(new Intent(HomeActivity.this,BaiduLocationActivity.class));;
             return true;
         }
         return super.onOptionsItemSelected(item);
