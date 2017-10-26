@@ -10,7 +10,7 @@ import com.junlong.framecorelibrary.glide.GlideUtil;
 import java.util.List;
 
 /**
- * @Author: 巴黎没有摩天轮Li
+ * @author: 巴黎没有摩天轮Li
  * @Description:
  * @Date: Created in 上午9:14 2017/10/25
  * @Modified By:

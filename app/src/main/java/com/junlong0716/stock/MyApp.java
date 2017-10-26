@@ -1,16 +1,11 @@
 package com.junlong0716.stock;
 
-import android.app.Application;
-import android.widget.Toast;
-
 import com.baidu.mapapi.SDKInitializer;
-import com.baidu.navisdk.adapter.BaiduNaviManager;
 import com.junlong.framecorelibrary.BaseApplication;
-import com.junlong.framecorelibrary.util.Utils;
 import com.junlong0716.retrofitutils.BaseRetrofitClient;
 
 /**
- * @Author: 巴黎没有摩天轮Li
+ * @author: 巴黎没有摩天轮Li
  * @Description:
  * @Date: Created in 下午3:27 2017/10/24
  * @Modified By:

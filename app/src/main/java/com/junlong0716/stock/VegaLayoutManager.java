@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 
 /**
- * @Author: 巴黎没有摩天轮Li
+ * @author: 巴黎没有摩天轮Li
  * @Description:
  * @Date: Created in 上午9:10 2017/10/25
  * @Modified By:
@@ -48,7 +48,8 @@ public class VegaLayoutManager extends RecyclerView.LayoutManager {
 
     @Override
     public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
-        this.recycler = recycler; // 二话不说，先把recycler保存了
+        // 二话不说，先把recycler保存了
+        this.recycler = recycler;
         if (!firstLayoutChildren || adapter == null || getItemCount() <= 0 || state.isPreLayout()) {
             return;
         }
@@ -196,8 +197,8 @@ public class VegaLayoutManager extends RecyclerView.LayoutManager {
                 } else {
                     firstVisiblePosition = Math.min(firstVisiblePosition, position);
                 }
-
-                layoutItem(child, locationRects.get(position)); //更新Item位置
+                //更新Item位置
+                layoutItem(child, locationRects.get(position));
             }
         }
 
@@ -284,7 +285,8 @@ public class VegaLayoutManager extends RecyclerView.LayoutManager {
         } else if (dy + scroll > maxScroll) {
             travel = maxScroll - scroll;
         }
-        scroll += travel; //累计偏移量
+        //累计偏移量
+        scroll += travel;
         lastDy = dy;
         if (!state.isPreLayout() && getChildCount() > 0) {
             layoutItemsOnScroll();

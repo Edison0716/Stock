@@ -95,9 +95,6 @@ public class BNDemoGuideActivity extends Activity {
         } else {
             BNRouteGuideManager.getInstance().onResume();
         }
-
-
-
     }
 
     protected void onPause() {

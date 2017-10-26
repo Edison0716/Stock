@@ -14,6 +14,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+/**
+ * @author mac
+ */
 public class BNEventDialog extends Dialog {
 
     private Context mContext;
@@ -21,7 +24,10 @@ public class BNEventDialog extends Dialog {
     private LinearLayout mRouteGuideLl;
     
     private TextView mRemainTimeTx;
-    private TextView mRemainDistanceTx; // 剩余总距离
+    /**
+    * 剩余总距离
+    **/
+    private TextView mRemainDistanceTx;
     private TextView mCurrentSpeedTx;
     
     private ImageView mTurnImage;

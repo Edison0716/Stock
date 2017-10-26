@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * @Author: 巴黎没有摩天轮Li
+ * @author: 巴黎没有摩天轮Li
  * @Description:
  * @Date: Created in 上午9:12 2017/10/25
  * @Modified By:

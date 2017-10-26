@@ -10,7 +10,7 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import java.util.List;
 
 /**
- * @Author: 巴黎没有摩天轮Li
+ * @author: 巴黎没有摩天轮Li
  * @Description:
  * @Date: Created in 下午6:41 2017/10/24
  * @Modified By:

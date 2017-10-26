@@ -21,7 +21,7 @@ import io.reactivex.schedulers.Schedulers;
 import okhttp3.ResponseBody;
 
 /**
- * @Author: 巴黎没有摩天轮Li
+ * @author: 巴黎没有摩天轮Li
  * @Description:
  * @Date: Created in 下午7:27 2017/10/24
  * @Modified By:
@@ -29,6 +29,7 @@ import okhttp3.ResponseBody;
 public class RequestService extends Service {
     private final String key = "f065fbab3b7e671f6e3cf9b1f8214ee2";
     private Disposable mDisposable;
+    private final String SUCCESS_CODE = "200";
 
     @Nullable
     @Override
@@ -54,7 +55,7 @@ public class RequestService extends Service {
                         Gson gson = new Gson();
                         try {
                             StockBean stockBean = gson.fromJson(body.string(), StockBean.class);
-                            if (stockBean.getResultcode().equals("200")) {
+                            if (stockBean.getResultcode().equals(SUCCESS_CODE)) {
                                 RxBus.getDefault().post(new StockEvent("STOCK_GET_SUCCESS", stockBean.getResult()));
                             }
                         } catch (IOException e) {

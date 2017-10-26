@@ -51,7 +51,7 @@ import static com.baidu.navisdk.adapter.PackageUtil.getSdcardDir;
 
 
 /**
- * @Author: 巴黎没有摩天轮Li
+ * @author: 巴黎没有摩天轮Li
  * @Description:
  * @Date: Created in 下午12:54 2017/10/25
  * @Modified By:
@@ -60,7 +60,7 @@ public class BaiduLocationActivity extends BaseMvcActivity {
     public static List<Activity> activityList = new LinkedList<Activity>();
 
     private static final String APP_FOLDER_NAME = "BNSDKSimpleDemo";
-//10280645
+
     private Button mWgsNaviBtn = null;
     private Button mGcjNaviBtn = null;
     private Button mBdmcNaviBtn = null;
@@ -323,16 +323,19 @@ public class BaiduLocationActivity extends BaseMvcActivity {
                 });
             }
 
+            @Override
             public void initSuccess() {
                 Toast.makeText(BaiduLocationActivity.this, "百度导航引擎初始化成功", Toast.LENGTH_SHORT).show();
                 hasInitSuccess = true;
                 initSetting();
             }
 
+            @Override
             public void initStart() {
                 Toast.makeText(BaiduLocationActivity.this, "百度导航引擎初始化开始", Toast.LENGTH_SHORT).show();
             }
 
+            @Override
             public void initFailed() {
                 Toast.makeText(BaiduLocationActivity.this, "百度导航引擎初始化失败", Toast.LENGTH_SHORT).show();
             }
