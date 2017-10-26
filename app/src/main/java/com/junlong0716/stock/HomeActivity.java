@@ -55,6 +55,7 @@ public class HomeActivity extends BaseMvcActivity implements NavigationView.OnNa
         mNavigationView.setNavigationItemSelectedListener(this);
         mNavigationView.setCheckedItem(R.id.nav_stock);
         StatusBarUtils.setColorForDrawerLayout(this, mDrawer, getResources().getColor(R.color.colorPrimaryDark), 0);
+
     }
 
 
